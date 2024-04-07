@@ -1,14 +1,14 @@
 #include "GLUTCallbacks.h"
 #include "HelloGL.h"
 
-namespace GLUTCallbacks 
+namespace GLUTCallbacks
 {
 	namespace
 	{
 		HelloGL* helloGL = nullptr;
 	}
 
-	void Init(HelloGL *gl)
+	void Init(HelloGL* gl)
 	{
 		helloGL = gl;
 	}
@@ -21,9 +21,19 @@ namespace GLUTCallbacks
 		}
 	}
 
-	void Timer(int preferredRefresh) 
+	void Timer(int preferredRefresh)
 	{
+		int updateTime = glutGet(GLUT_ELAPSED_TIME);
 		helloGL->Update();
-		glutTimerFunc(preferredRefresh, GLUTCallbacks::Timer, preferredRefresh);
-	}  
+		updateTime = glutGet(GLUT_ELAPSED_TIME) - updateTime;
+		glutTimerFunc(preferredRefresh - updateTime, GLUTCallbacks::Timer, preferredRefresh);
+	}
+
+	void Keyboard(unsigned char key, int x, int y)
+	{
+		if (helloGL != nullptr) 
+		{
+			helloGL->Keyboard(key, x, y);
+		}
+	}
 }

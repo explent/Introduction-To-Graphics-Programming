@@ -20,13 +20,15 @@ class HelloGL
 public:
 
 	HelloGL(int argc, char* argv[]);
-
+	void Keyboard(unsigned char key, int x, int y);
 	~HelloGL(void);
 	void Display();
 	void DrawPolygon();
 	void Update();
 private:
 	float rotation;
+	float cameraSpeed;
+	int option;
 	Camera* camera;
 };
 
