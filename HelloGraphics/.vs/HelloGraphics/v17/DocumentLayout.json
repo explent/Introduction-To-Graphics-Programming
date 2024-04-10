@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Entit\\OneDrive\\Dokumente\\GitHub\\Introduction-To-Graphics-Programming\\HelloGraphics\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0A55EA00-E0D3-43D7-B644-308769C56084}|HelloGraphics\\HelloGraphics.vcxproj|C:\\Users\\Entit\\OneDrive\\Dokumente\\GitHub\\Introduction-To-Graphics-Programming\\HelloGraphics\\HelloGraphics\\Cube.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0A55EA00-E0D3-43D7-B644-308769C56084}|HelloGraphics\\HelloGraphics.vcxproj|solutionrelative:HelloGraphics\\Cube.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A55EA00-E0D3-43D7-B644-308769C56084}|HelloGraphics\\HelloGraphics.vcxproj|C:\\Users\\Entit\\OneDrive\\Dokumente\\GitHub\\Introduction-To-Graphics-Programming\\HelloGraphics\\HelloGraphics\\Cube.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0A55EA00-E0D3-43D7-B644-308769C56084}|HelloGraphics\\HelloGraphics.vcxproj|solutionrelative:HelloGraphics\\Cube.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0A55EA00-E0D3-43D7-B644-308769C56084}|HelloGraphics\\HelloGraphics.vcxproj|C:\\Users\\Entit\\OneDrive\\Dokumente\\GitHub\\Introduction-To-Graphics-Programming\\HelloGraphics\\HelloGraphics\\HelloGL.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{0A55EA00-E0D3-43D7-B644-308769C56084}|HelloGraphics\\HelloGraphics.vcxproj|solutionrelative:HelloGraphics\\HelloGL.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{0A55EA00-E0D3-43D7-B644-308769C56084}|HelloGraphics\\HelloGraphics.vcxproj|C:\\Users\\Entit\\OneDrive\\Dokumente\\GitHub\\Introduction-To-Graphics-Programming\\HelloGraphics\\HelloGraphics\\Structures.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0A55EA00-E0D3-43D7-B644-308769C56084}|HelloGraphics\\HelloGraphics.vcxproj|solutionrelative:HelloGraphics\\Structures.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0A55EA00-E0D3-43D7-B644-308769C56084}|HelloGraphics\\HelloGraphics.vcxproj|C:\\Users\\Entit\\OneDrive\\Dokumente\\GitHub\\Introduction-To-Graphics-Programming\\HelloGraphics\\HelloGraphics\\HelloGL.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{0A55EA00-E0D3-43D7-B644-308769C56084}|HelloGraphics\\HelloGraphics.vcxproj|solutionrelative:HelloGraphics\\HelloGL.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A55EA00-E0D3-43D7-B644-308769C56084}|HelloGraphics\\HelloGraphics.vcxproj|C:\\Users\\Entit\\OneDrive\\Dokumente\\GitHub\\Introduction-To-Graphics-Programming\\HelloGraphics\\HelloGraphics\\GLUTCallbacks.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{0A55EA00-E0D3-43D7-B644-308769C56084}|HelloGraphics\\HelloGraphics.vcxproj|solutionrelative:HelloGraphics\\GLUTCallbacks.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A55EA00-E0D3-43D7-B644-308769C56084}|HelloGraphics\\HelloGraphics.vcxproj|C:\\Users\\Entit\\OneDrive\\Dokumente\\GitHub\\Introduction-To-Graphics-Programming\\HelloGraphics\\HelloGraphics\\GLUTCallbacks.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{0A55EA00-E0D3-43D7-B644-308769C56084}|HelloGraphics\\HelloGraphics.vcxproj|solutionrelative:HelloGraphics\\GLUTCallbacks.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A55EA00-E0D3-43D7-B644-308769C56084}|HelloGraphics\\HelloGraphics.vcxproj|C:\\Users\\Entit\\OneDrive\\Dokumente\\GitHub\\Introduction-To-Graphics-Programming\\HelloGraphics\\HelloGraphics\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{0A55EA00-E0D3-43D7-B644-308769C56084}|HelloGraphics\\HelloGraphics.vcxproj|solutionrelative:HelloGraphics\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,67 +35,65 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Cube.cpp",
+              "DocumentMoniker": "C:\\Users\\Entit\\OneDrive\\Dokumente\\GitHub\\Introduction-To-Graphics-Programming\\HelloGraphics\\HelloGraphics\\Cube.cpp",
+              "RelativeDocumentMoniker": "HelloGraphics\\Cube.cpp",
+              "ToolTip": "C:\\Users\\Entit\\OneDrive\\Dokumente\\GitHub\\Introduction-To-Graphics-Programming\\HelloGraphics\\HelloGraphics\\Cube.cpp",
+              "RelativeToolTip": "HelloGraphics\\Cube.cpp",
+              "ViewState": "AQIAABkAAAAAAAAAAAAAAB0AAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-08T14:11:24.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Cube.h",
+              "DocumentMoniker": "C:\\Users\\Entit\\OneDrive\\Dokumente\\GitHub\\Introduction-To-Graphics-Programming\\HelloGraphics\\HelloGraphics\\Cube.h",
+              "RelativeDocumentMoniker": "HelloGraphics\\Cube.h",
+              "ToolTip": "C:\\Users\\Entit\\OneDrive\\Dokumente\\GitHub\\Introduction-To-Graphics-Programming\\HelloGraphics\\HelloGraphics\\Cube.h",
+              "RelativeToolTip": "HelloGraphics\\Cube.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-08T14:00:10.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "HelloGL.cpp",
               "DocumentMoniker": "C:\\Users\\Entit\\OneDrive\\Dokumente\\GitHub\\Introduction-To-Graphics-Programming\\HelloGraphics\\HelloGraphics\\HelloGL.cpp",
               "RelativeDocumentMoniker": "HelloGraphics\\HelloGL.cpp",
               "ToolTip": "C:\\Users\\Entit\\OneDrive\\Dokumente\\GitHub\\Introduction-To-Graphics-Programming\\HelloGraphics\\HelloGraphics\\HelloGL.cpp",
               "RelativeToolTip": "HelloGraphics\\HelloGL.cpp",
-              "ViewState": "AQIAAG0AAAAAAAAAAAAAAI0AAAASAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-03-29T04:04:48.637Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GLUTCallbacks.h",
-              "DocumentMoniker": "C:\\Users\\Entit\\OneDrive\\Dokumente\\GitHub\\Introduction-To-Graphics-Programming\\HelloGraphics\\HelloGraphics\\GLUTCallbacks.h",
-              "RelativeDocumentMoniker": "HelloGraphics\\GLUTCallbacks.h",
-              "ToolTip": "C:\\Users\\Entit\\OneDrive\\Dokumente\\GitHub\\Introduction-To-Graphics-Programming\\HelloGraphics\\HelloGraphics\\GLUTCallbacks.h",
-              "RelativeToolTip": "HelloGraphics\\GLUTCallbacks.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
+              "DocumentIndex": 3,
+              "Title": "Structures.h",
+              "DocumentMoniker": "C:\\Users\\Entit\\OneDrive\\Dokumente\\GitHub\\Introduction-To-Graphics-Programming\\HelloGraphics\\HelloGraphics\\Structures.h",
+              "RelativeDocumentMoniker": "HelloGraphics\\Structures.h",
+              "ToolTip": "C:\\Users\\Entit\\OneDrive\\Dokumente\\GitHub\\Introduction-To-Graphics-Programming\\HelloGraphics\\HelloGraphics\\Structures.h",
+              "RelativeToolTip": "HelloGraphics\\Structures.h",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-03-29T04:05:58.054Z"
+              "WhenOpened": "2024-04-08T13:20:12.673Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "HelloGL.h",
               "DocumentMoniker": "C:\\Users\\Entit\\OneDrive\\Dokumente\\GitHub\\Introduction-To-Graphics-Programming\\HelloGraphics\\HelloGraphics\\HelloGL.h",
               "RelativeDocumentMoniker": "HelloGraphics\\HelloGL.h",
               "ToolTip": "C:\\Users\\Entit\\OneDrive\\Dokumente\\GitHub\\Introduction-To-Graphics-Programming\\HelloGraphics\\HelloGraphics\\HelloGL.h",
               "RelativeToolTip": "HelloGraphics\\HelloGL.h",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAAB4AAAAMAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABgAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-03-29T04:05:54.267Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GLUTCallbacks.cpp",
-              "DocumentMoniker": "C:\\Users\\Entit\\OneDrive\\Dokumente\\GitHub\\Introduction-To-Graphics-Programming\\HelloGraphics\\HelloGraphics\\GLUTCallbacks.cpp",
-              "RelativeDocumentMoniker": "HelloGraphics\\GLUTCallbacks.cpp",
-              "ToolTip": "C:\\Users\\Entit\\OneDrive\\Dokumente\\GitHub\\Introduction-To-Graphics-Programming\\HelloGraphics\\HelloGraphics\\GLUTCallbacks.cpp",
-              "RelativeToolTip": "HelloGraphics\\GLUTCallbacks.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-03-29T04:04:53.595Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\Entit\\OneDrive\\Dokumente\\GitHub\\Introduction-To-Graphics-Programming\\HelloGraphics\\HelloGraphics\\main.cpp",
-              "RelativeDocumentMoniker": "HelloGraphics\\main.cpp",
-              "ToolTip": "C:\\Users\\Entit\\OneDrive\\Dokumente\\GitHub\\Introduction-To-Graphics-Programming\\HelloGraphics\\HelloGraphics\\main.cpp",
-              "RelativeToolTip": "HelloGraphics\\main.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-03-29T04:04:31.915Z"
             }
           ]
         }

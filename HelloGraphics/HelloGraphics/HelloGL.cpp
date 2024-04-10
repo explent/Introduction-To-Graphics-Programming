@@ -1,4 +1,5 @@
 #include "HelloGL.h"
+#include "Structures.h"
 
 HelloGL::HelloGL(int argc, char* argv[])
 {	
@@ -6,12 +7,16 @@ HelloGL::HelloGL(int argc, char* argv[])
 	rotation = 0.0f;
 	cameraSpeed = 0.1f;
 	camera = new Camera();
-	camera->eye.x = 0.0f; camera->eye.y = 0.0f; camera->eye.z = 1.0f;
+	for (int i = 0; i < 199; i++) {
+		cube[i] = new Cube(((rand() % 400) / 10.0f) - 20.0f, ((rand() % 200) / 10.0f) - 10.0f, -(rand() % 1000) / 10.0f);
+	}
+	cube[199] = new Cube(-5.0f, 0.0f, 0.0f);
+	camera->eye.x = 5.0f; camera->eye.y = 5.0f; camera->eye.z = -5.0f;
 	camera->center.x = 0.0f; camera->center.y = 0.0f; camera->center.z = 0.0f;
 	camera->up.x = 0.0f; camera->up.y = 1.0f; camera->up.z = 0.0f;
 	GLUTCallbacks::Init(this);
 	glutInit(&argc, argv);
-	glutInitDisplayMode(GLUT_DOUBLE);
+	glutInitDisplayMode(GLUT_DOUBLE | GLUT_DEPTH);
 	glutInitWindowSize(800,800);
 	glutInitWindowPosition(100,100);
 	glutCreateWindow("Simple OpenGL Program");
@@ -23,32 +28,24 @@ HelloGL::HelloGL(int argc, char* argv[])
 	glViewport(0, 0, 800, 800);
 	gluPerspective(45, 1, 0, 1000);
 	glMatrixMode(GL_MODELVIEW);
+	glEnable(GL_DEPTH_TEST);
+	glEnable(GL_CULL_FACE);
+	glCullFace(GL_BACK);
 	glutMainLoop();
 }
 
 void HelloGL::Display()
 {
-	glClear(GL_COLOR_BUFFER_BIT);
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glPushMatrix();
-	glTranslatef(0.0f, 0.0f, -5.0f);
-	glRotatef(rotation, 1.0f, 0.0f, 0.0f);
-	glutWireCube(1);
-//	DrawPolygon();
+//	glRotatef(rotation, 1.0f, 0.0f, 0.0f);
+	for (int i = 0; i < 199; i++) {
+		cube[i]->Draw();
+	}	
+	cube[199]->Draw();
 	glPopMatrix();
 	glFlush();
 	glutSwapBuffers();
-}
-
-void HelloGL::DrawPolygon()
-{
-		glBegin(GL_POLYGON);
-		{
-			glVertex2f(-0.75, 0.5);
-			glVertex2f(0.75, 0.5);
-			glVertex2f(0.75, -0.5);
-			glVertex2f(-0.75, -0.5);
-			glEnd();
-		}
 }
 
 void HelloGL::Update() 
@@ -59,6 +56,10 @@ void HelloGL::Update()
 	if (rotation >= 360.0f) {
 		rotation = 0.0f;
 	}
+	for (int i = 0; i < 199; i++) {
+		cube[i]->Update();
+	}
+	cube[199]->Update();
 }
 
 void HelloGL::Keyboard(unsigned char key, int x, int y) 
@@ -155,4 +156,5 @@ void HelloGL::Keyboard(unsigned char key, int x, int y)
 HelloGL::~HelloGL(void) 
 {
 	delete camera;
+	delete[] cube;
 }
