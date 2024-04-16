@@ -3,6 +3,7 @@
 
 HelloGL::HelloGL(int argc, char* argv[])
 {	
+	Cube::Load((char*)"cube.txt");
 	option = 1;
 	rotation = 0.0f;
 	cameraSpeed = 0.1f;

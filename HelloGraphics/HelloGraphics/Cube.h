@@ -14,11 +14,14 @@ private:
 	static Color* indexedColors;
 	static GLushort* indices;
 	GLfloat _rotation;
+	static int numVertices, numColors, numIndices;
 public:
 	Cube(float x, float y, float z);
 	~Cube();
 
 	void Draw();
 	void Update();
+
+	static bool Load(char* path);
 };
 
