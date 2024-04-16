@@ -1,1 +1,7 @@
-﻿  HelloGraphics.vcxproj -> C:\Users\Entit\OneDrive\Dokumente\GitHub\Introduction-To-Graphics-Programming\HelloGraphics\Debug\HelloGraphics.exe
+﻿  Cube.cpp
+  GLUTCallbacks.cpp
+  HelloGL.cpp
+C:\Users\Entit\OneDrive\Dokumente\GitHub\Introduction-To-Graphics-Programming\HelloGraphics\HelloGraphics\HelloGL.cpp(159,2): warning C4154: deletion of an array expression; conversion to pointer supplied
+  main.cpp
+  Generating Code...
+  HelloGraphics.vcxproj -> C:\Users\Entit\OneDrive\Dokumente\GitHub\Introduction-To-Graphics-Programming\HelloGraphics\Debug\HelloGraphics.exe

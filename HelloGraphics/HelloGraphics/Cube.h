@@ -10,9 +10,9 @@ class Cube
 {
 private:
 	Vector3 _position;
-	static Vertex indexedVertices[];
-	static Color indexedColors[];
-	static GLushort indices[];
+	static Vertex* indexedVertices;
+	static Color* indexedColors;
+	static GLushort* indices;
 	GLfloat _rotation;
 public:
 	Cube(float x, float y, float z);

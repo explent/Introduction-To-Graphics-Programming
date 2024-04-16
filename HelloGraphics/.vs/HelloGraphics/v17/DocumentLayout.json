@@ -30,8 +30,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HelloGL.h",
+              "DocumentMoniker": "C:\\Users\\Entit\\OneDrive\\Dokumente\\GitHub\\Introduction-To-Graphics-Programming\\HelloGraphics\\HelloGraphics\\HelloGL.h",
+              "RelativeDocumentMoniker": "HelloGraphics\\HelloGL.h",
+              "ToolTip": "C:\\Users\\Entit\\OneDrive\\Dokumente\\GitHub\\Introduction-To-Graphics-Programming\\HelloGraphics\\HelloGraphics\\HelloGL.h",
+              "RelativeToolTip": "HelloGraphics\\HelloGL.h",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABgAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-29T04:05:54.267Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -40,7 +52,7 @@
               "RelativeDocumentMoniker": "HelloGraphics\\Cube.cpp",
               "ToolTip": "C:\\Users\\Entit\\OneDrive\\Dokumente\\GitHub\\Introduction-To-Graphics-Programming\\HelloGraphics\\HelloGraphics\\Cube.cpp",
               "RelativeToolTip": "HelloGraphics\\Cube.cpp",
-              "ViewState": "AQIAABkAAAAAAAAAAAAAAB0AAAATAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-04-08T14:11:24.625Z",
               "EditorCaption": ""
@@ -53,10 +65,9 @@
               "RelativeDocumentMoniker": "HelloGraphics\\Cube.h",
               "ToolTip": "C:\\Users\\Entit\\OneDrive\\Dokumente\\GitHub\\Introduction-To-Graphics-Programming\\HelloGraphics\\HelloGraphics\\Cube.h",
               "RelativeToolTip": "HelloGraphics\\Cube.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAfAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-08T14:00:10.504Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-08T14:00:10.504Z"
             },
             {
               "$type": "Document",
@@ -66,10 +77,9 @@
               "RelativeDocumentMoniker": "HelloGraphics\\HelloGL.cpp",
               "ToolTip": "C:\\Users\\Entit\\OneDrive\\Dokumente\\GitHub\\Introduction-To-Graphics-Programming\\HelloGraphics\\HelloGraphics\\HelloGL.cpp",
               "RelativeToolTip": "HelloGraphics\\HelloGL.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-03-29T04:04:48.637Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-29T04:04:48.637Z"
             },
             {
               "$type": "Document",
@@ -79,21 +89,9 @@
               "RelativeDocumentMoniker": "HelloGraphics\\Structures.h",
               "ToolTip": "C:\\Users\\Entit\\OneDrive\\Dokumente\\GitHub\\Introduction-To-Graphics-Programming\\HelloGraphics\\HelloGraphics\\Structures.h",
               "RelativeToolTip": "HelloGraphics\\Structures.h",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-04-08T13:20:12.673Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "HelloGL.h",
-              "DocumentMoniker": "C:\\Users\\Entit\\OneDrive\\Dokumente\\GitHub\\Introduction-To-Graphics-Programming\\HelloGraphics\\HelloGraphics\\HelloGL.h",
-              "RelativeDocumentMoniker": "HelloGraphics\\HelloGL.h",
-              "ToolTip": "C:\\Users\\Entit\\OneDrive\\Dokumente\\GitHub\\Introduction-To-Graphics-Programming\\HelloGraphics\\HelloGraphics\\HelloGL.h",
-              "RelativeToolTip": "HelloGraphics\\HelloGL.h",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABgAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-03-29T04:05:54.267Z"
             }
           ]
         }
