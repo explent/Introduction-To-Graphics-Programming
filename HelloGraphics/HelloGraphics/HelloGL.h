@@ -7,6 +7,7 @@
 #include "GLUTCallbacks.h"
 #include "iostream"
 #include "Cube.h"
+#include "Teapot.h"
 
 class HelloGL
 {
@@ -17,11 +18,14 @@ public:
 	~HelloGL(void);
 	void Display();
 	void Update();
+	void InitObjects();
+	void InitGL(int argc, char* argv[]);
 private:
 	float rotation;
 	float cameraSpeed;
 	int option;
 	Camera* camera;
 	Cube* cube[200];
+	Teapot* teapot[200];
 };
 

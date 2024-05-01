@@ -12,9 +12,13 @@ private:
 	static Vertex* indexedVertices;
 	static GLushort* indices;
 	static int numVertices, numIndices;
+	GLfloat _rotation;
 public:
 	Teapot(float x, float y, float z);
 	~Teapot();
+
+	void Draw();
+	void Update();
 	static bool Load(char* path);
 };
 

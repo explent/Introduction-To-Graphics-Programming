@@ -130,6 +130,7 @@
     <ClInclude Include="Cube.h" />
     <ClInclude Include="GLUTCallbacks.h" />
     <ClInclude Include="HelloGL.h" />
+    <ClInclude Include="MeshLoader.h" />
     <ClInclude Include="Structures.h" />
     <ClInclude Include="Teapot.h" />
   </ItemGroup>
@@ -138,6 +139,7 @@
     <ClCompile Include="GLUTCallbacks.cpp" />
     <ClCompile Include="HelloGL.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MeshLoader.cpp" />
     <ClCompile Include="Teapot.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

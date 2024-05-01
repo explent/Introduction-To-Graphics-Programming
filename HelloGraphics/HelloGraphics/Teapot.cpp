@@ -1,14 +1,37 @@
 #include "Teapot.h"
 #include <fstream>
 #include <string>
-#include <vector>
 
-std::vector<Vector3> vertices;
+Vertex* Teapot::indexedVertices = nullptr;
+GLushort* Teapot::indices = nullptr; 
+
+int Teapot::numVertices = 0;
+int Teapot::numIndices = 0;
 
 Teapot::Teapot(float x, float y, float z) {
+	_rotation = 0.0f;
 	_position.x = x;
 	_position.y = y;
 	_position.z = z;
+}
+
+void Teapot::Draw() {
+	if (indexedVertices != nullptr && indices != nullptr) {
+		glEnableClientState(GL_VERTEX_ARRAY);
+		glVertexPointer(3, GL_FLOAT, 0, indexedVertices);
+
+		glPushMatrix();
+		glTranslatef(_position.x, _position.y, _position.z);
+		glRotatef(_rotation, 1.0f, 0.0f, 0.0f);
+		glDrawElements(GL_TRIANGLES, 18960, GL_UNSIGNED_SHORT, indices);
+		glPopMatrix();
+
+		glDisableClientState(GL_VERTEX_ARRAY);
+	}
+}
+
+void Teapot::Update() {
+	_rotation += 0.1f;
 }
 
 bool Teapot::Load(char* path) {
@@ -19,15 +42,21 @@ bool Teapot::Load(char* path) {
 		return false;
 	}
 
-	std::string line;
-	while (std::getline(inFile, line)) {
-		if (!line.empty() && line[0] == 'v') {
-			int i = i++;
-			std::cout << i;
-			vertices.push_back();
-			inFile >> vertices[i].x, vertices[i].y, vertices[i].z;
-		}
+	inFile >> numVertices;
+	indexedVertices = new Vertex[numVertices];
+	for (int i = 0; i < numVertices; i++)
+	{
+		inFile >> indexedVertices[i].x >> indexedVertices[i].y >> indexedVertices[i].z;
+
 	}
+
+	inFile >> numIndices;
+	indices = new GLushort[numIndices];
+	for (int i = 0; i < numIndices; i++) {
+		inFile >> indices[i];
+	}
+	inFile.close();
+	return true; 
 }
 
 Teapot::~Teapot(void) {
