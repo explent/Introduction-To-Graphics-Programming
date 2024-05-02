@@ -1,4 +1,7 @@
-﻿  HelloGL.cpp
-C:\Users\e020595n\Documents\GitHub\Introduction-To-Graphics-Programming\HelloGraphics\HelloGraphics\HelloGL.cpp(176,15): warning C4154: deletion of an array expression; conversion to pointer supplied
-C:\Users\e020595n\Documents\GitHub\Introduction-To-Graphics-Programming\HelloGraphics\HelloGraphics\HelloGL.cpp(177,17): warning C4154: deletion of an array expression; conversion to pointer supplied
-  HelloGraphics.vcxproj -> C:\Users\e020595n\Documents\GitHub\Introduction-To-Graphics-Programming\HelloGraphics\Debug\HelloGraphics.exe
+﻿  GLUTCallbacks.cpp
+  HelloGL.cpp
+C:\Users\e020595n.STUDENT.003\Documents\GitHub\Introduction-To-Graphics-Programming\HelloGraphics\HelloGraphics\HelloGL.cpp(175,15): warning C4154: deletion of an array expression; conversion to pointer supplied
+C:\Users\e020595n.STUDENT.003\Documents\GitHub\Introduction-To-Graphics-Programming\HelloGraphics\HelloGraphics\HelloGL.cpp(176,17): warning C4154: deletion of an array expression; conversion to pointer supplied
+  main.cpp
+  Generating Code...
+  HelloGraphics.vcxproj -> C:\Users\e020595n.STUDENT.003\Documents\GitHub\Introduction-To-Graphics-Programming\HelloGraphics\Debug\HelloGraphics.exe

@@ -25,7 +25,7 @@ private:
 	float cameraSpeed;
 	int option;
 	Camera* camera;
-	Cube* cube[200];
-	Teapot* teapot[200];
+	Cube* cube[30];
+	Teapot* teapot[2];
 };
 

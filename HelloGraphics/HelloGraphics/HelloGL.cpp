@@ -14,10 +14,10 @@ void HelloGL::Display()
 	glClear(GL_COLOR_BUFFER_BIT /* | GL_DEPTH_BUFFER_BIT */ );
 	glPushMatrix();
 	glRotatef(rotation, 1.0f, 0.0f, 0.0f);
-	for (int i = 0; i < 199; i++) {
+	for (int i = 0; i < 29; i++) {
 		cube[i]->Draw();
 	}	
-	cube[199]->Draw();
+	//cube[0]->Draw();
 	glPopMatrix();
 	glFlush();
 	glutSwapBuffers();
@@ -31,10 +31,10 @@ void HelloGL::Update()
 	if (rotation >= 360.0f) {
 		rotation = 0.0f;
 	}
-	for (int i = 0; i < 199; i++) {
+	for (int i = 0; i < 29; i++) {
 		cube[i]->Update();
 	}
-	cube[199]->Update();
+	//cube[199]->Update();
 }
 
 void HelloGL::InitObjects() {
@@ -50,10 +50,11 @@ void HelloGL::InitObjects() {
 	//for (int i = 0; i < 199; i++) {
 	//	teapot[i] = new Teapot(((rand() % 400) / 10.0f) - 20.0f, ((rand() % 200) / 10.0f) - 10.0f, -(rand() % 1000) / 10.0f);
 	//}
-	for (int i = 0; i < 199; i++) {
+	for (int i = 0; i < 29; i++) {
 		cube[i] = new Cube(cubeMesh, ((rand() % 400) / 10.0f) - 20.0f, ((rand() % 200) / 10.0f) - 10.0f, -(rand() % 1000) / 10.0f);
 	}
-
+	//cube[0] = new Cube(cubeMesh,0.0f,0.0f,0.0f);
+	//cube[1] = new Cube(cubeMesh, 2.0f, 0.0f, 0.0f);
 }
 
 void HelloGL::InitGL(int argc, char* argv[]) {
@@ -62,6 +63,7 @@ void HelloGL::InitGL(int argc, char* argv[]) {
 	glutInitDisplayMode(GLUT_DOUBLE /*| GL_DEPTH*/);
 	glutInitWindowSize(800, 800);
 	glutInitWindowPosition(100, 100);
+	//glMatrixMode(GL_MODELVIEW);
 	glutCreateWindow("Simple OpenGL Program");
 	glutKeyboardFunc(GLUTCallbacks::Keyboard);
 	glutDisplayFunc(GLUTCallbacks::Display);
