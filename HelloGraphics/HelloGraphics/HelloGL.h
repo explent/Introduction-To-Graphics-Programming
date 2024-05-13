@@ -8,6 +8,8 @@
 #include "iostream"
 #include "Cube.h"
 #include "Teapot.h"
+#include "SceneObject.h"
+#include "Pyramid.h"
 
 class HelloGL
 {
@@ -25,7 +27,7 @@ private:
 	float cameraSpeed;
 	int option;
 	Camera* camera;
-	Cube* cube[30];
-	Teapot* teapot[2];
+	SceneObject* objects[30];
+	Teapot* teapot[200];
 };
 

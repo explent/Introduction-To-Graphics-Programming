@@ -14,10 +14,9 @@ void HelloGL::Display()
 	glClear(GL_COLOR_BUFFER_BIT /* | GL_DEPTH_BUFFER_BIT */ );
 	glPushMatrix();
 	glRotatef(rotation, 1.0f, 0.0f, 0.0f);
-	for (int i = 0; i < 29; i++) {
-		cube[i]->Draw();
+	for (int i = 0; i < 30; i++) {
+		objects[i]->Draw();
 	}	
-	//cube[0]->Draw();
 	glPopMatrix();
 	glFlush();
 	glutSwapBuffers();
@@ -31,15 +30,17 @@ void HelloGL::Update()
 	if (rotation >= 360.0f) {
 		rotation = 0.0f;
 	}
-	for (int i = 0; i < 29; i++) {
-		cube[i]->Update();
+	for (int i = 0; i < 30; i++) {
+		objects[i]->Update();
 	}
-	//cube[199]->Update();
 }
 
 void HelloGL::InitObjects() {
 	Teapot::Load((char*)"teapt.txt");
 	Mesh* cubeMesh = MeshLoader::Load((char*)"cube.txt");
+	Mesh* pyramidMesh = MeshLoader::Load((char*)"pyramid.txt");
+	Texture2D* texture = new Texture2D();
+	texture->Load((char*)"Penguins.raw", 512, 512);
 	option = 1;
 	rotation = 0.0f;
 	cameraSpeed = 0.1f;
@@ -47,14 +48,15 @@ void HelloGL::InitObjects() {
 	camera->eye.x = 0.0f; camera->eye.y = 0.0f; camera->eye.z = 10.0f;
 	camera->center.x = 0.0f; camera->center.y = 0.0f; camera->center.z = 0.0f;
 	camera->up.x = 0.0f; camera->up.y = 1.0f; camera->up.z = 0.0f;
-	//for (int i = 0; i < 199; i++) {
-	//	teapot[i] = new Teapot(((rand() % 400) / 10.0f) - 20.0f, ((rand() % 200) / 10.0f) - 10.0f, -(rand() % 1000) / 10.0f);
-	//}
-	for (int i = 0; i < 29; i++) {
-		cube[i] = new Cube(cubeMesh, ((rand() % 400) / 10.0f) - 20.0f, ((rand() % 200) / 10.0f) - 10.0f, -(rand() % 1000) / 10.0f);
-	}
-	//cube[0] = new Cube(cubeMesh,0.0f,0.0f,0.0f);
-	//cube[1] = new Cube(cubeMesh, 2.0f, 0.0f, 0.0f);
+	/*for (int i = 0; i < 199; i++) {
+		teapot[i] = new Teapot(((rand() % 400) / 10.0f) - 20.0f, ((rand() % 200) / 10.0f) - 10.0f, -(rand() % 1000) / 10.0f);
+	}*/
+	for (int i = 0; i < 30; i++) {
+		objects[i] = new Cube(cubeMesh, texture, ((rand() % 400) / 10.0f) - 20.0f, ((rand() % 200) / 10.0f) - 10.0f, -(rand() % 1000) / 10.0f);
+		}
+	/*for (int i = 30; i < 60; i++) {
+		objects[i] = new Pyramid(pyramidMesh, ((rand() % 400) / 10.0f) - 20.0f, ((rand() % 200) / 10.0f) - 10.0f, -(rand() % 1000) / 10.0f);
+	}*/
 }
 
 void HelloGL::InitGL(int argc, char* argv[]) {
@@ -73,9 +75,12 @@ void HelloGL::InitGL(int argc, char* argv[]) {
 	glViewport(0, 0, 800, 800);
 	gluPerspective(45, 1, 50, 1000);
 	glMatrixMode(GL_MODELVIEW);
+	glEnable(GL_TEXTURE_2D);
 	//	glEnable(GL_DEPTH_TEST);
 	glEnable(GL_CULL_FACE);
 	glCullFace(GL_BACK);
+	glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+	glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 }
 
 void HelloGL::Keyboard(unsigned char key, int x, int y) 
@@ -172,6 +177,6 @@ void HelloGL::Keyboard(unsigned char key, int x, int y)
 HelloGL::~HelloGL(void) 
 {
 	delete camera;
-	delete[] cube;
+	delete[] objects;
 	delete[] teapot;
 }
