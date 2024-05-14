@@ -1,4 +1,24 @@
 ﻿  Cube.cpp
-  Texture2D.cpp
+C:\Users\e020595n\Documents\GitHub\Introduction-To-Graphics-Programming\HelloGraphics\HelloGraphics\Cube.cpp(53,25): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\e020595n\Documents\GitHub\Introduction-To-Graphics-Programming\HelloGraphics\HelloGraphics\Cube.cpp(54,25): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\e020595n\Documents\GitHub\Introduction-To-Graphics-Programming\HelloGraphics\HelloGraphics\Cube.cpp(55,25): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\e020595n\Documents\GitHub\Introduction-To-Graphics-Programming\HelloGraphics\HelloGraphics\Cube.cpp(57,25): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\e020595n\Documents\GitHub\Introduction-To-Graphics-Programming\HelloGraphics\HelloGraphics\Cube.cpp(58,25): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\e020595n\Documents\GitHub\Introduction-To-Graphics-Programming\HelloGraphics\HelloGraphics\Cube.cpp(59,25): warning C4305: '=': truncation from 'double' to 'float'
+  GLUTCallbacks.cpp
+  HelloGL.cpp
+C:\Users\e020595n\Documents\GitHub\Introduction-To-Graphics-Programming\HelloGraphics\HelloGraphics\HelloGL.cpp(100,26): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\e020595n\Documents\GitHub\Introduction-To-Graphics-Programming\HelloGraphics\HelloGraphics\HelloGL.cpp(101,26): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\e020595n\Documents\GitHub\Introduction-To-Graphics-Programming\HelloGraphics\HelloGraphics\HelloGL.cpp(102,26): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\e020595n\Documents\GitHub\Introduction-To-Graphics-Programming\HelloGraphics\HelloGraphics\HelloGL.cpp(104,26): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\e020595n\Documents\GitHub\Introduction-To-Graphics-Programming\HelloGraphics\HelloGraphics\HelloGL.cpp(105,26): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\e020595n\Documents\GitHub\Introduction-To-Graphics-Programming\HelloGraphics\HelloGraphics\HelloGL.cpp(106,26): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\e020595n\Documents\GitHub\Introduction-To-Graphics-Programming\HelloGraphics\HelloGraphics\HelloGL.cpp(108,27): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\e020595n\Documents\GitHub\Introduction-To-Graphics-Programming\HelloGraphics\HelloGraphics\HelloGL.cpp(109,27): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\e020595n\Documents\GitHub\Introduction-To-Graphics-Programming\HelloGraphics\HelloGraphics\HelloGL.cpp(110,27): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\e020595n\Documents\GitHub\Introduction-To-Graphics-Programming\HelloGraphics\HelloGraphics\HelloGL.cpp(208,18): warning C4154: deletion of an array expression; conversion to pointer supplied
+C:\Users\e020595n\Documents\GitHub\Introduction-To-Graphics-Programming\HelloGraphics\HelloGraphics\HelloGL.cpp(209,17): warning C4154: deletion of an array expression; conversion to pointer supplied
+  main.cpp
   Generating Code...
-  HelloGraphics.vcxproj -> C:\Users\Entit\OneDrive\Dokumente\GitHub\Introduction-To-Graphics-Programming\HelloGraphics\Debug\HelloGraphics.exe
+  LINK : C:\Users\e020595n\Documents\GitHub\Introduction-To-Graphics-Programming\HelloGraphics\Debug\HelloGraphics.exe not found or not built by the last incremental link; performing full link
+  HelloGraphics.vcxproj -> C:\Users\e020595n\Documents\GitHub\Introduction-To-Graphics-Programming\HelloGraphics\Debug\HelloGraphics.exe

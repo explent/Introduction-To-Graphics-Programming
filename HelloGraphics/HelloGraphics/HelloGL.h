@@ -22,12 +22,15 @@ public:
 	void Update();
 	void InitObjects();
 	void InitGL(int argc, char* argv[]);
+	void InitLight();
 private:
 	float rotation;
 	float cameraSpeed;
 	int option;
 	Camera* camera;
-	SceneObject* objects[30];
+	SceneObject* objects[500];
 	Teapot* teapot[200];
+	Vector4* _lightPosition;
+	Lighting* _lightData;
 };
 
