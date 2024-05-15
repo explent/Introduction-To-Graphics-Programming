@@ -23,7 +23,7 @@ public:
 	void InitObjects();
 	void InitGL(int argc, char* argv[]);
 	void InitLight();
-	void DrawString(const char* text, Vector3* position, Color* color);
+	void DrawString(const char* text, float x, float y, Color* color);
 private:
 	float rotation;
 	float cameraSpeed;

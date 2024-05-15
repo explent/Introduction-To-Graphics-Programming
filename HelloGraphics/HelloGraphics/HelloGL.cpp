@@ -13,17 +13,25 @@ HelloGL::HelloGL(int argc, char* argv[])
 void HelloGL::Display()
 {
 	glClear(GL_COLOR_BUFFER_BIT /* | GL_DEPTH_BUFFER_BIT */ );
-	Vector3 v = { -7.6f, 6.9f, -50.1f };
+
+
+
+
+	int windowWidth = glutGet(GLUT_WINDOW_WIDTH);
+	int windowHeight = glutGet(GLUT_WINDOW_HEIGHT);
+	float centerX = windowWidth / 2.0f;
+	float centerY = windowHeight / 2.0f;
 	Color c = { 1.0f, 1.0f, 1.0f };
 	glPushMatrix();
 	glRotatef(rotation, 1.0f, 0.0f, 0.0f);
 	for (int i = 0; i < 3; i++) {
 		objects[i]->Draw();
 	}	
-	DrawString((char*)"cheese", &v, &c);
+	DrawString((char*)"OpenGLProgram", 20, 770, &c);
 	glPopMatrix();
 	glFlush();
 	glutSwapBuffers();
+	std::cout << *GLUTCallbacks::Timer;
 }
 
 void HelloGL::Update() 
@@ -114,14 +122,33 @@ void HelloGL::InitLight() {
 	_lightData->Specular.w = 1.0;
 }
 
-void HelloGL::DrawString(const char* text, Vector3* position, Color* color) {
+void HelloGL::DrawString(const char* text, float x, float y, Color* color) {
 	glColor3f(color->r, color->g, color->b);
+
+	// Save the current matrix state
+	glMatrixMode(GL_PROJECTION);
 	glPushMatrix();
-	
-	glTranslatef(position->x, position->y, position->z);
-	glRasterPos2f(0.0f, 0.0f);
+	glLoadIdentity();
+
+	// Set up orthographic projection
+	glOrtho(0, glutGet(GLUT_WINDOW_WIDTH), 0, glutGet(GLUT_WINDOW_HEIGHT), -1, 1);
+
+	// Switch back to modelview matrix mode
+	glMatrixMode(GL_MODELVIEW);
+	glPushMatrix();
+	glLoadIdentity();
+
+	// Set the text position
+	glRasterPos2f(x, y);
+
+	// Render the text
 	glutBitmapString(GLUT_BITMAP_TIMES_ROMAN_24, (unsigned char*)text);
+
+	// Restore the matrix state
 	glPopMatrix();
+	glMatrixMode(GL_PROJECTION);
+	glPopMatrix();
+	glMatrixMode(GL_MODELVIEW);
 }
 
 void HelloGL::Keyboard(unsigned char key, int x, int y) 
