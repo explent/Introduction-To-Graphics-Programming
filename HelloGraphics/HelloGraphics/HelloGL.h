@@ -23,12 +23,13 @@ public:
 	void InitObjects();
 	void InitGL(int argc, char* argv[]);
 	void InitLight();
+	void DrawString(const char* text, Vector3* position, Color* color);
 private:
 	float rotation;
 	float cameraSpeed;
 	int option;
 	Camera* camera;
-	SceneObject* objects[500];
+	SceneObject* objects[3];
 	Teapot* teapot[200];
 	Vector4* _lightPosition;
 	Lighting* _lightData;

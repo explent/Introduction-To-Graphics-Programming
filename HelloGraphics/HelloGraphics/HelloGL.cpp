@@ -13,11 +13,14 @@ HelloGL::HelloGL(int argc, char* argv[])
 void HelloGL::Display()
 {
 	glClear(GL_COLOR_BUFFER_BIT /* | GL_DEPTH_BUFFER_BIT */ );
+	Vector3 v = { -7.6f, 6.9f, -50.1f };
+	Color c = { 1.0f, 1.0f, 1.0f };
 	glPushMatrix();
 	glRotatef(rotation, 1.0f, 0.0f, 0.0f);
-	for (int i = 0; i < 500; i++) {
+	for (int i = 0; i < 3; i++) {
 		objects[i]->Draw();
 	}	
+	DrawString((char*)"cheese", &v, &c);
 	glPopMatrix();
 	glFlush();
 	glutSwapBuffers();
@@ -35,7 +38,7 @@ void HelloGL::Update()
 	if (rotation >= 360.0f) {
 		rotation = 0.0f;
 	}
-	for (int i = 0; i < 500; i++) {
+	for (int i = 0; i < 3; i++) {
 		objects[i]->Update();
 	}
 }
@@ -55,7 +58,7 @@ void HelloGL::InitObjects() {
 	/*for (int i = 0; i < 199; i++) {
 		teapot[i] = new Teapot(((rand() % 400) / 10.0f) - 20.0f, ((rand() % 200) / 10.0f) - 10.0f, -(rand() % 1000) / 10.0f);
 	}*/
-	for (int i = 0; i < 500; i++) {
+	for (int i = 0; i < 3; i++) {
 		objects[i] = new Cube(cubeMesh, texture, ((rand() % 400) / 10.0f) - 20.0f, ((rand() % 200) / 10.0f) - 10.0f, -(rand() % 1000) / 10.0f);
 		}
 	/*for (int i = 30; i < 60; i++) {
@@ -109,6 +112,16 @@ void HelloGL::InitLight() {
 	_lightData->Specular.y = 0.2;
 	_lightData->Specular.z = 0.2;
 	_lightData->Specular.w = 1.0;
+}
+
+void HelloGL::DrawString(const char* text, Vector3* position, Color* color) {
+	glColor3f(color->r, color->g, color->b);
+	glPushMatrix();
+	
+	glTranslatef(position->x, position->y, position->z);
+	glRasterPos2f(0.0f, 0.0f);
+	glutBitmapString(GLUT_BITMAP_TIMES_ROMAN_24, (unsigned char*)text);
+	glPopMatrix();
 }
 
 void HelloGL::Keyboard(unsigned char key, int x, int y) 
