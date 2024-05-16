@@ -17,6 +17,7 @@ public:
 
 	HelloGL(int argc, char* argv[]);
 	void Keyboard(unsigned char key, int x, int y);
+	void Mouse(int button, int state, int x, int y);
 	~HelloGL(void);
 	void Display();
 	void Update();
@@ -24,14 +25,22 @@ public:
 	void InitGL(int argc, char* argv[]);
 	void InitLight();
 	void DrawString(const char* text, float x, float y, Color* color);
+	void CalculateAndDisplayFPS();
+	void Motion(int x, int y) {
+
+	}
 private:
 	float rotation;
 	float cameraSpeed;
 	int option;
+	int nobjects = 3;
 	Camera* camera;
 	SceneObject* objects[3];
 	Teapot* teapot[200];
 	Vector4* _lightPosition;
 	Lighting* _lightData;
+	int frameCount = 0;
+	int previousTime = 0;
+	float fps = 0.0f;
 };
 

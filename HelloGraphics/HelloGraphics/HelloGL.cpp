@@ -1,6 +1,9 @@
 #include "HelloGL.h"
 #include "Structures.h"
 #include "MeshLoader.h"
+#include <iomanip>
+#include <sstream>
+#include <string>
 
 HelloGL::HelloGL(int argc, char* argv[])
 {	
@@ -14,13 +17,13 @@ void HelloGL::Display()
 {
 	glClear(GL_COLOR_BUFFER_BIT /* | GL_DEPTH_BUFFER_BIT */ );
 
-
-
-
 	int windowWidth = glutGet(GLUT_WINDOW_WIDTH);
 	int windowHeight = glutGet(GLUT_WINDOW_HEIGHT);
 	float centerX = windowWidth / 2.0f;
 	float centerY = windowHeight / 2.0f;
+	std::stringstream ss;
+	ss << "Rendered objects in scene: " << nobjects;
+	std::string objectCountString = ss.str();
 	Color c = { 1.0f, 1.0f, 1.0f };
 	glPushMatrix();
 	glRotatef(rotation, 1.0f, 0.0f, 0.0f);
@@ -28,10 +31,11 @@ void HelloGL::Display()
 		objects[i]->Draw();
 	}	
 	DrawString((char*)"OpenGLProgram", 20, 770, &c);
+	DrawString(objectCountString.c_str(), 20, 20, &c);
+	CalculateAndDisplayFPS();
 	glPopMatrix();
 	glFlush();
 	glutSwapBuffers();
-	std::cout << *GLUTCallbacks::Timer;
 }
 
 void HelloGL::Update() 
@@ -84,6 +88,7 @@ void HelloGL::InitGL(int argc, char* argv[]) {
 	glutCreateWindow("Simple OpenGL Program");
 	glutKeyboardFunc(GLUTCallbacks::Keyboard);
 	glutDisplayFunc(GLUTCallbacks::Display);
+	glutMouseFunc(GLUTCallbacks::Mouse);
 	glutTimerFunc(REFRESHRATE, GLUTCallbacks::Timer, REFRESHRATE);
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
@@ -149,6 +154,32 @@ void HelloGL::DrawString(const char* text, float x, float y, Color* color) {
 	glMatrixMode(GL_PROJECTION);
 	glPopMatrix();
 	glMatrixMode(GL_MODELVIEW);
+}
+
+void HelloGL::CalculateAndDisplayFPS() {
+	int currentTime = glutGet(GLUT_ELAPSED_TIME);
+	int elapsedTime = currentTime - previousTime;
+
+	// Increment frame count
+	frameCount++;
+
+	// Check if one second has elapsed
+	if (elapsedTime > 1000) {
+		// Calculate FPS
+		fps = (float)frameCount / (elapsedTime / 1000.0f);
+
+		// Reset frame count and time
+		frameCount = 0;
+		previousTime = currentTime;
+	}
+	Color c = { 1.0f, 1.0f, 1.0f };
+	// Convert FPS to string
+	std::stringstream ss;
+	ss << "FPS: " << std::fixed << std::setprecision(2) << fps;
+	std::string fpsString = ss.str();
+
+	// Display FPS text
+	DrawString(fpsString.c_str(), 680.0f, 770.0f, &c);
 }
 
 void HelloGL::Keyboard(unsigned char key, int x, int y) 
@@ -240,6 +271,24 @@ void HelloGL::Keyboard(unsigned char key, int x, int y)
 			camera->up.z -= cameraSpeed;
 		}
 	}
+}
+
+void HelloGL::Mouse(int button, int state, int x, int y) {
+	
+	static int lastX = x;
+	static int lastY = y;
+
+	if (button == GLUT_RIGHT_BUTTON && state == GLUT_DOWN) {
+		lastX = x;
+		lastY = y;
+	}
+}
+
+void HelloGL::Motion(int x, int y) {
+	static float sensitivity = 0.05f;
+
+	int deltaX = x - lastX;
+
 }
 
 HelloGL::~HelloGL(void) 
