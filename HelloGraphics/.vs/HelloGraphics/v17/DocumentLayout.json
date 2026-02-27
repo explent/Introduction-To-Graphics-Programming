@@ -82,8 +82,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -94,8 +98,7 @@
               "RelativeToolTip": "HelloGraphics\\GLUTCallbacks.cpp",
               "ViewState": "AQIAABsAAAAAAAAAAAAAACoAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-05-15T21:55:20.509Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-15T21:55:20.509Z"
             },
             {
               "$type": "Document",
@@ -119,8 +122,7 @@
               "RelativeToolTip": "HelloGraphics\\HelloGL.h",
               "ViewState": "AQIAAA0AAAAAAAAAAAAAAB0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-03-29T04:05:54.267Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-29T04:05:54.267Z"
             },
             {
               "$type": "Document",
@@ -130,7 +132,7 @@
               "RelativeDocumentMoniker": "HelloGraphics\\HelloGL.cpp",
               "ToolTip": "C:\\Users\\Entit\\OneDrive\\Dokumente\\GitHub\\Introduction-To-Graphics-Programming\\HelloGraphics\\HelloGraphics\\HelloGL.cpp",
               "RelativeToolTip": "HelloGraphics\\HelloGL.cpp",
-              "ViewState": "AQIAABABAAAAAAAAAAAAAB0BAAAAAAAA",
+              "ViewState": "AQIAAP8AAAAAAAAAAAAAAB0BAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-03-29T04:04:48.637Z",
               "EditorCaption": ""
@@ -205,8 +207,7 @@
               "RelativeToolTip": "HelloGraphics\\GLUTCallbacks.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-05-11T23:04:40.047Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-11T23:04:40.047Z"
             },
             {
               "$type": "Document",

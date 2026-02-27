@@ -284,12 +284,6 @@ void HelloGL::Mouse(int button, int state, int x, int y) {
 	}
 }
 
-void HelloGL::Motion(int x, int y) {
-	static float sensitivity = 0.05f;
-
-	int deltaX = x - lastX;
-
-}
 
 HelloGL::~HelloGL(void) 
 {

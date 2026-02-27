@@ -8,6 +8,7 @@ C:\Users\Entit\OneDrive\Dokumente\GitHub\Introduction-To-Graphics-Programming\He
 C:\Users\Entit\OneDrive\Dokumente\GitHub\Introduction-To-Graphics-Programming\HelloGraphics\HelloGraphics\HelloGL.cpp(124,27): warning C4305: '=': truncation from 'double' to 'float'
 C:\Users\Entit\OneDrive\Dokumente\GitHub\Introduction-To-Graphics-Programming\HelloGraphics\HelloGraphics\HelloGL.cpp(125,27): warning C4305: '=': truncation from 'double' to 'float'
 C:\Users\Entit\OneDrive\Dokumente\GitHub\Introduction-To-Graphics-Programming\HelloGraphics\HelloGraphics\HelloGL.cpp(126,27): warning C4305: '=': truncation from 'double' to 'float'
-C:\Users\Entit\OneDrive\Dokumente\GitHub\Introduction-To-Graphics-Programming\HelloGraphics\HelloGraphics\HelloGL.cpp(286,2): warning C4154: deletion of an array expression; conversion to pointer supplied
-C:\Users\Entit\OneDrive\Dokumente\GitHub\Introduction-To-Graphics-Programming\HelloGraphics\HelloGraphics\HelloGL.cpp(287,2): warning C4154: deletion of an array expression; conversion to pointer supplied
+C:\Users\Entit\OneDrive\Dokumente\GitHub\Introduction-To-Graphics-Programming\HelloGraphics\HelloGraphics\HelloGL.cpp(291,2): warning C4154: deletion of an array expression; conversion to pointer supplied
+C:\Users\Entit\OneDrive\Dokumente\GitHub\Introduction-To-Graphics-Programming\HelloGraphics\HelloGraphics\HelloGL.cpp(292,2): warning C4154: deletion of an array expression; conversion to pointer supplied
+  LINK : C:\Users\Entit\OneDrive\Dokumente\GitHub\Introduction-To-Graphics-Programming\HelloGraphics\Debug\HelloGraphics.exe not found or not built by the last incremental link; performing full link
   HelloGraphics.vcxproj -> C:\Users\Entit\OneDrive\Dokumente\GitHub\Introduction-To-Graphics-Programming\HelloGraphics\Debug\HelloGraphics.exe
